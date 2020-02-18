@@ -3,9 +3,11 @@
 
 int main(){
 	for(int i = 0; i <= 64; i++){
-		std::cout << std::oct << i 
-		<< "\t" << std::dec << i 
-		<< "\t" << std::hex << i 
-		<< "\n";
+		std::setw(60);
+		std::cout << 
+		std::setw(6) << std::oct << i << 
+		std::setw(6) << std::dec << i << 
+		std::setw(6) << std::hex << i <<
+		std::endl;
 	}
 }
